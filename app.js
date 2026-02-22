@@ -3,7 +3,7 @@ const app = express();
 
 
 app.get('/health-check', (req, res) => {
-    res.send('OK');
+    res.status(200).send('OK');
 });
 
 app.listen(3000, () => {
